@@ -1,5 +1,8 @@
 import numpy as np
-
+# This script will generate a PDB file of a series of snapshots of a protein
+# along the eigenvector provided.
+#
+# Author: Qi Wang(wang2qi@mail.uc.edu)
 ########## User specification ##########
 pdb_name = 'protien_name.charmm_format' 
 # Do NOT use file extension here.
