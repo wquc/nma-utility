@@ -4,13 +4,14 @@ import numpy as np
 	source.dat has the following format:
 	{mode_id} {eigen_value}: {x1} {y1} {z1} {x2} {y2} {z2} ... {xn} {yn} {zn}
 '''
-
+# Author: Qi Wang (wang2qi@mail.uc.edu)
+#
 dbspace = "  "
 udscore = "_"
 extsn = ".dat"
-
+#
 inp_name = "source"
-
+#
 def extract_eigenvec(mode):
 	# step 1. Read from data
 	print "reading data ..."
