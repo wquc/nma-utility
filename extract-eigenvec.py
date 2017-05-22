@@ -6,7 +6,6 @@ import numpy as np
 '''
 # Author: Qi Wang (wang2qi@mail.uc.edu)
 #
-dbspace = "  "
 udscore = "_"
 extsn = ".dat"
 #
@@ -20,7 +19,8 @@ def extract_eigenvec(mode):
 		while (line_count < mode):
 			new_line = inp_file.readline().strip().replace(":"," ")
 			line_count = line_count + 1
-		new_list = new_line.split(dbspace)
+		tmp_list = new_line.split(" ")
+		new_list = [item for item in filter(None, new_line.split(' '))]
 		eigen_mode = new_list[0]
 		eigen_value = new_list[1]
 		eigen_vec = np.delete(np.array(new_list), [0,1])
