@@ -1,9 +1,6 @@
 # This function was written initially to load vmd-movie.pdb files
 # of different modes to visualize their motions.
 # It essentially just load and set the representation of a pdb structure.
-# (the function name prefix has nothing to to with author's initial, but
-# it will avoid conflicts with VMD built-in commands when trying to tab
-# it out.)
 # Author: Qi Wang(wang2qi@mail.uc.edu)
 
 proc wq_show_movie {} {
