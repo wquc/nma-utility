@@ -196,7 +196,7 @@ bool calc_eigenvec_corr (const std::string& out_name, const unsigned int& vecdim
 			cij = sqrt(product_ii[i]*product_ii[j]);
 			cij = product_ij[i*vecdim+j]/cij;
 			out_file << std::setw(6) << i+1 << std::setw(6) << j+1 
-					 << std::fixed << std::setw(12) << std::setprecision(6) << cij << std::endl;
+                                 << std::fixed << std::setw(12) << std::setprecision(6) << cij << std::endl;
 		}
 	}
 	out_file.close();
