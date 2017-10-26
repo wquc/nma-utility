@@ -167,8 +167,8 @@ bool calc_eigenvec_avrg (const std::string& vecfile_name, const unsigned int& ve
 								  eigen_vec[3*i+2]*eigen_vec[3*i+2]) / mode_eigenvalue;	
 				for (unsigned int j=0; j<vecdim; j++) {
 					product_ij[i*vecdim+j] += (eigen_vec[3*i+0]*eigen_vec[3*j+0] + 
-											   eigen_vec[3*i+1]*eigen_vec[3*j+1] + 
-											   eigen_vec[3*i+2]*eigen_vec[3*j+2]) / mode_eigenvalue;
+                                                                   eigen_vec[3*i+1]*eigen_vec[3*j+1] + 
+                                                                   eigen_vec[3*i+2]*eigen_vec[3*j+2]) / mode_eigenvalue;
 				}
 			}
 			std::cout << "> Mode stat: mode #" << mode_id << " with eigenvalue (" << mode_eigenvalue 
