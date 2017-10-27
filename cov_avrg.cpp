@@ -192,6 +192,9 @@ bool calc_eigenvec_corr (const std::string& out_name, const unsigned int& vecdim
 	}
 	double cij;
 	for(unsigned int i=0; i<vecdim; i++) {
+		// percentage conunter
+		std::cout << std::setw(5) << std::fixed << std::setprecision(2) 
+			  << static_cast<double>(i+1)/vecdim*100 << "% completed\r";// << std::endl;
 		for(unsigned int j=0; j<vecdim; j++){
 			cij = sqrt(product_ii[i]*product_ii[j]);
 			cij = product_ij[i*vecdim+j]/cij;
@@ -200,6 +203,6 @@ bool calc_eigenvec_corr (const std::string& out_name, const unsigned int& vecdim
 		}
 	}
 	out_file.close();
-	std::cout << "> Done." << std::endl;
+	std::cout << std::endl << "> Done." << std::endl;
 	return true;
 }
