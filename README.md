@@ -14,7 +14,7 @@ Tcl scripts (run in VMD) to generate gif "movies" of selected normal modes.
 ## [04-gen-vmd-movie.py](https://github.com/qi-wang-uc/nma-utility/blob/master/06-gen-vmd-movie.py)
 Generate vmd-movies (consecutive frames in a PDB file) which can be rendered to a GIF file or just load in VMD for visualization.
 
-## [05-viz-pdb-movie.tcl]
+## [05-viz-pdb-movie.tcl](https://github.com/qi-wang-uc/nma-utility/blob/master/04-viz-pdb-movie.tcl)
 Load and visualize PDB file generated from `gen-vmd-movie.py`
 
 ## [06-gen-seg.py](https://github.com/qi-wang-uc/nma-utility/blob/master/05-gen-seg.py)
